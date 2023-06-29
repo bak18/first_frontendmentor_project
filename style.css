@@ -1,0 +1,161 @@
+body{
+    background-color: hsl(30, 38%, 92%); 
+    font-size: 14px;
+    font-weight: 100;
+}
+
+img{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.image_container{
+    width: 300px;
+    height: 450px;
+}
+
+.description{
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 450px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.name{
+    letter-spacing: 5px;
+    height: 15px;
+    margin-left: 38px;
+}
+
+h1{
+    font-family: 'fraunces', 'montserrat', sans-serif;
+    font-size: 32px;
+    
+    margin-left: 38px;
+}
+
+.presentation{
+    line-height: 23px;
+    height: 92px;
+    width: 230px;
+    font-size: 17px;
+    font-style: normal;
+    margin-left: 38px;
+} 
+
+
+.button{
+    height: 48px;
+    width: 236px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #3D8168;
+    color: white;
+    
+}
+
+.button:active{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.cta{
+    margin-top: 25px;
+    margin-left: 38px;
+    width: 240px;
+}
+
+ .icon-cart{
+    height: 12px;
+    width: 12px;
+} 
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 32px;
+    align-items: center;
+}
+
+.new_price{
+    height: 32px;
+    font-size: 32px;
+    margin-left: 38px;
+    color: #3D8168;
+}
+
+.old_price{
+    height: 23px;
+    font-size: 13px;
+    margin-right: 100px;
+    margin-top: 25px;
+    text-decoration: line-through;
+}
+
+.card{
+    display: flex;
+    position: absolute;
+    top: 125px;
+    left: 500px;
+    width: 600px;
+    height: 450px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0px;
+    left: 660px;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img{
+        width: 365px;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .image_container{
+        width: 365px;
+        height: 300px;
+    }
+
+    .description{
+        width: 365px;
+        height: 395px;
+        border-radius:  0px 0px 10px 10px ;
+    }
+
+    .name{
+        margin-top: 20px;
+    }
+
+    .presentation{
+        font-size: 18px;
+        margin-top: 10px;
+        width: 300px;
+    } 
+
+    h1{
+        margin-top: 10px;
+    }
+    
+    .cta, .button{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .price{
+        margin-top: 10px;
+    }
+}
